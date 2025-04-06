@@ -1,11 +1,10 @@
-
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
     <section id="home" className="flex flex-col justify-center min-h-screen pt-16 pb-12">
-      <div className="container max-w-screen-xl animate-fade-in">
+      <div className="container max-w-screen-xl animate-fade-in opacity-100">
         <div className="space-y-4">
           <p className="text-teal font-mono">Hi, my name is</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-light">

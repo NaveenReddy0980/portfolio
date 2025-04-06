@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import ProjectCard, { ProjectProps } from "./ProjectCard";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,9 @@ const Projects = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+            const element = entry.target as HTMLElement;
+            element.style.opacity = "1";
+            element.classList.add('animate-fade-in');
             observer.unobserve(entry.target);
           }
         });
@@ -125,7 +126,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className="container max-w-screen-xl opacity-0" ref={sectionRef}>
+      <div className="container max-w-screen-xl opacity-0 transition-opacity duration-500" ref={sectionRef}>
         <h2 className="section-title">
           <span className="section-number">03.</span> My Projects
         </h2>
@@ -143,14 +144,12 @@ const Projects = () => {
         </div>
         
         <div>
-          {/* Featured projects */}
           {filteredProjects
             .filter(project => project.featured)
             .map((project, index) => (
               <ProjectCard key={`featured-${index}`} {...project} />
             ))}
           
-          {/* Regular projects grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {filteredProjects
               .filter(project => !project.featured)

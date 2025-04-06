@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 
 const About = () => {
@@ -9,7 +8,9 @@ const About = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+            const element = entry.target as HTMLElement;
+            element.style.opacity = "1";
+            element.classList.add('animate-fade-in');
             observer.unobserve(entry.target);
           }
         });
@@ -30,7 +31,7 @@ const About = () => {
 
   return (
     <section id="about" className="bg-navy-dark text-slate-light py-24">
-      <div className="container max-w-screen-xl opacity-0" ref={sectionRef}>
+      <div className="container max-w-screen-xl opacity-0 transition-opacity duration-500" ref={sectionRef}>
         <h2 className="section-title text-slate-light">
           <span className="section-number">01.</span> About Me
         </h2>

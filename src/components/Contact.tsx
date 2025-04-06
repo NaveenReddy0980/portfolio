@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,7 +19,9 @@ const Contact = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+            const element = entry.target as HTMLElement;
+            element.style.opacity = "1";
+            element.classList.add('animate-fade-in');
             observer.unobserve(entry.target);
           }
         });
@@ -54,7 +55,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-navy-dark text-slate-light">
-      <div className="container max-w-screen-xl opacity-0" ref={sectionRef}>
+      <div className="container max-w-screen-xl opacity-0 transition-opacity duration-500" ref={sectionRef}>
         <h2 className="section-title">
           <span className="section-number">04.</span> Get In Touch
         </h2>
