@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-12">
-      <div className="container max-w-screen-xl">
-        <div className="space-y-4 animate-fade-in">
+    <section id="home" className="flex flex-col justify-center min-h-screen pt-16 pb-12">
+      <div className="container max-w-screen-xl animate-fade-in">
+        <div className="space-y-4">
           <p className="text-teal font-mono">Hi, my name is</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-light">
             John Doe.
@@ -20,7 +20,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button className="group bg-transparent border border-teal text-teal hover:bg-teal/10">
+            <Button 
+              className="group bg-transparent border border-teal text-teal hover:bg-teal/10"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Check out my work 
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>

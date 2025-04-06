@@ -29,9 +29,9 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="bg-navy-dark text-slate-light">
+    <section id="about" className="bg-navy-dark text-slate-light py-24">
       <div className="container max-w-screen-xl opacity-0" ref={sectionRef}>
-        <h2 className="section-title">
+        <h2 className="section-title text-slate-light">
           <span className="section-number">01.</span> About Me
         </h2>
         
