@@ -1,5 +1,5 @@
 
-import { ArrowRight, GitHub, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -27,7 +27,7 @@ const Hero = () => {
             
             <div className="flex space-x-4 items-center">
               <a href="#" className="text-slate hover:text-teal transition-colors">
-                <GitHub size={20} />
+                <Github size={20} />
               </a>
               <a href="#" className="text-slate hover:text-teal transition-colors">
                 <Linkedin size={20} />
