@@ -49,13 +49,13 @@ const Skills = () => {
       title: "Backend Development",
       description: "Building scalable and secure server-side applications and REST APIs.",
       icon: Server,
-      techs: ["Node.js", "Express", "Python", "Django", "API Design"]
+      techs: ["Node.js", "Express", "API Design"]
     },
     {
       title: "Database Management",
       description: "Designing and optimizing database schemas and queries for performance.",
       icon: Database,
-      techs: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "Redis"]
+      techs: ["PostgreSQL", "MongoDB",  "Redis"]
     },
     {
       title: "DevOps & Tooling",
@@ -63,18 +63,8 @@ const Skills = () => {
       icon: Terminal,
       techs: ["Git", "Docker", "AWS", "GitHub Actions", "Linux"]
     },
-    {
-      title: "Software Architecture",
-      description: "Designing scalable, maintainable, and robust software systems.",
-      icon: Code,
-      techs: ["Microservices", "Design Patterns", "System Design", "DDD", "TDD"]
-    },
-    {
-      title: "Data Analysis",
-      description: "Extracting insights from data to guide business decisions.",
-      icon: LineChart,
-      techs: ["Python", "Pandas", "SQL", "Data Visualization", "Jupyter"]
-    },
+    
+    
   ];
 
   return (

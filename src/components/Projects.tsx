@@ -36,74 +36,51 @@ const Projects = () => {
 
   const projects: ProjectProps[] = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce platform with React, Node.js, and PostgreSQL. Features include user authentication, product search, cart functionality, and secure checkout with Stripe.",
-      image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe", "Redux"],
-      githubLink: "#",
-      liveLink: "#",
-      featured: true
+      "title": "Payment Application",
+      "description": "A full-stack payment application with React, Node.js, and PostgreSQL. Features include user authentication, money sending, balance checking.",
+      "image": "https://images.unsplash.com/photo-1599050751795-6cdaafbc2319?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "tags": ["React", "Node.js", "PostgreSQL", "Stripe", "Redux"],
+      "githubLink": "#",
+      "liveLink": "#",
+      "featured": true
     },
     {
-      title: "Blog Platform",
-      description: "A modern blogging platform built with Next.js and GraphQL. Includes features like rich text editing, image uploads, commenting, and user profiles.",
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Next.js", "GraphQL", "MongoDB", "AWS S3", "Tailwind"],
-      githubLink: "#",
-      liveLink: "#",
-      featured: true
+      "title": "Blog Platform",
+      "description": "A modern blogging platform built with Next.js and GraphQL. Includes features like rich text editing, image uploads, commenting, and user profiles.",
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop",
+      "tags": ["Next.js", "GraphQL", "MongoDB", "AWS S3", "Tailwind"],
+      "githubLink": "#",
+      "liveLink": "#",
+      "featured": true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management app with real-time updates using Socket.io.",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
-      tags: ["React", "Express", "MongoDB", "Socket.io", "JWT"],
-      githubLink: "#",
-      liveLink: "#"
+      "title": "Task Management App",
+      "description": "A collaborative task management app with real-time updates using Socket.io.",
+      "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
+      "tags": ["React", "Express", "MongoDB", "Socket.io", "JWT"],
+      "githubLink": "#",
+      "liveLink": "#"
     },
     {
-      title: "Weather Dashboard",
-      description: "A weather dashboard that shows current and forecast weather data based on location.",
-      tags: ["JavaScript", "Weather API", "CSS", "Responsive Design"],
-      githubLink: "#",
-      liveLink: "#"
+      "title": "Weather Dashboard",
+      "description": "A weather dashboard that shows current and forecast weather data based on location.",
+      "image": "https://plus.unsplash.com/premium_photo-1677593850639-9f1e14e4524b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "tags": ["JavaScript", "Weather API", "CSS", "Responsive Design"],
+      "githubLink": "#",
+      "liveLink": "#"
     },
     {
-      title: "Recipe Finder",
-      description: "An app that helps users find recipes based on ingredients they have.",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "Spoonacular API", "Styled Components"],
-      githubLink: "#",
-      liveLink: "#"
-    },
-    {
-      title: "Real Estate Listings",
-      description: "A platform for browsing and filtering real estate properties.",
-      tags: ["Vue.js", "Firebase", "Google Maps API"],
-      githubLink: "#",
-      liveLink: "#"
-    },
-    {
-      title: "Fitness Tracker",
-      description: "A mobile-first web app for tracking workouts and fitness progress.",
-      tags: ["React Native", "Firebase", "Chart.js"],
-      githubLink: "#"
-    },
-    {
-      title: "Movie Database",
-      description: "A searchable movie database using the TMDB API with user reviews.",
-      tags: ["Angular", "TMDB API", "RxJS"],
-      githubLink: "#",
-      liveLink: "#"
-    },
-    {
-      title: "Budget Planner",
-      description: "A personal finance app for tracking income, expenses, and savings goals.",
-      tags: ["React", "D3.js", "LocalStorage"],
-      githubLink: "#",
-      liveLink: "#"
+      "title": "Recipe Finder",
+      "description": "An app that helps users find recipes based on ingredients they have.",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070&auto=format&fit=crop",
+      "tags": ["React", "Spoonacular API", "Styled Components"],
+      "githubLink": "#",
+      "liveLink": "#"
     }
-  ];
+  ]
+  
+  
+  
 
   const categories = [
     { id: "all", name: "All Projects" },

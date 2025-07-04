@@ -74,14 +74,14 @@ const Contact = () => {
                 className="flex items-center gap-4 text-slate-light hover:text-teal transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span>hello@example.com</span>
+                <span>naveenreddy7252@gmail.com</span>
               </a>
               
               <div className="flex gap-4 pt-4">
-                <a href="#" className="text-slate hover:text-teal transition-colors">
+                <a href="https://github.com/NaveenReddy0980" className="text-slate hover:text-teal transition-colors">
                   <Github size={22} />
                 </a>
-                <a href="#" className="text-slate hover:text-teal transition-colors">
+                <a href="https://www.linkedin.com/in/naveen-reddy/" className="text-slate hover:text-teal transition-colors">
                   <Linkedin size={22} />
                 </a>
                 <a href="#" className="text-slate hover:text-teal transition-colors">

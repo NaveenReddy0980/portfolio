@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-col justify-center min-h-screen pt-16 pb-12">
+    <section id="home" className="bg-navy-dark flex flex-col justify-center min-h-screen pt-16 pb-12">
       <div className="container max-w-screen-xl animate-fade-in opacity-100">
         <div className="space-y-4">
           <p className="text-teal font-mono">Hi, my name is</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-light">
-            John Doe.
+            Naveen Reddy
           </h1>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate">
             I build things for the web.
@@ -28,16 +28,16 @@ const Hero = () => {
             </Button>
             
             <div className="flex space-x-4 items-center">
-              <a href="#" className="text-slate hover:text-teal transition-colors">
+              <a href="https://github.com/NaveenReddy0980" className="text-slate hover:text-teal transition-colors">
                 <Github size={20} />
               </a>
-              <a href="#" className="text-slate hover:text-teal transition-colors">
+              <a href="https://www.linkedin.com/in/naveen-reddy/" className="text-slate hover:text-teal transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="#" className="text-slate hover:text-teal transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-slate hover:text-teal transition-colors">
+              <a href="sriramchowdary1524@gmail.com" className="text-slate hover:text-teal transition-colors">
                 <Mail size={20} />
               </a>
             </div>

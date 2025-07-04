@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,10 +10,10 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -22,40 +21,46 @@ const Header = () => {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'py-4 bg-navy-dark bg-opacity-95 shadow-md backdrop-blur-sm' : 'py-6 bg-transparent'
+        isScrolled
+          ? "py-4 bg-navy-dark bg-opacity-95 shadow-md backdrop-blur-sm"
+          : "py-6 bg-transparent"
       }`}
     >
       <div className="container flex justify-between items-center">
-        <a 
-          href="#" 
-          className="text-2xl font-bold text-teal"
-        >
+        <a href="#" className="text-2xl font-bold text-teal">
           Portfolio
         </a>
-        
+
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link, index) => (
-            <a 
+            <a
               key={link.name}
               href={link.href}
               className="nav-link"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <span className="text-teal font-mono">{`0${index + 1}.`}</span> {link.name}
+              <span className="text-teal font-mono">{`0${index + 1}.`}</span>{" "}
+              {link.name}
             </a>
           ))}
-          <Button className="bg-transparent border border-teal text-teal hover:bg-teal/10">
-            Resume
-          </Button>
+          <a
+            href="/22881A6621resume.pdf" // Correct relative path
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-transparent border border-teal text-teal hover:bg-teal/10">
+              Resume
+            </Button>
+          </a>
         </nav>
-        
+
         {/* Mobile Navigation Toggle */}
         <button
           className="md:hidden text-teal"
@@ -76,12 +81,19 @@ const Header = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-lg nav-link"
               >
-                <span className="text-teal font-mono">{`0${index + 1}.`}</span> {link.name}
+                <span className="text-teal font-mono">{`0${index + 1}.`}</span>{" "}
+                {link.name}
               </a>
             ))}
-            <Button className="bg-transparent border border-teal text-teal hover:bg-teal/10">
-              Resume
-            </Button>
+            <a
+              href="/22881A6621resume.pdf" // Correct relative path
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-transparent border border-teal text-teal hover:bg-teal/10">
+                Resume
+              </Button>
+            </a>
           </nav>
         </div>
       )}

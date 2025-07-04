@@ -39,8 +39,8 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <p>
-              Hello! My name is John and I enjoy creating things that live on the internet. 
-              My interest in web development started back in 2012 when I decided to try 
+              Hello! My name is Naveen Reddy and I enjoy creating things that live on the internet. 
+              My interest in web development started back in 2024 when I decided to try 
               editing custom Tumblr themes — turns out hacking together a custom reblog 
               button taught me a lot about HTML & CSS!
             </p>
@@ -85,7 +85,7 @@ const About = () => {
           <div className="relative group mx-auto">
             <div className="relative z-10 rounded-md overflow-hidden w-64 h-64 md:w-80 md:h-80">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" 
+                src="https://imgs.search.brave.com/9v4lSWHzqlhLV0qbLvGTfw8_sbXl5ejzwakh_7BcZaE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/cGZlc21zZW40cWs3/MS5qcGc_d2lkdGg9/MzIwJmF1dG89d2Vi/cCZzPTdmNGFhNjFh/OTk1NGJiY2UzMDgx/ZTVhZjU3OTI4YWIx/OWFhMmNhMWI" 
                 alt="Portrait of John Doe" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
               />
