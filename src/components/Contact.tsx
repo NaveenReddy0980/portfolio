@@ -95,7 +95,10 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block mb-1 text-sm font-mono text-slate">
-                  Name
+                  Name   
+
+
+                  
                 </label>
                 <Input
                   id="name"
